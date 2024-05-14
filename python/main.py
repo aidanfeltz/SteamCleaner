@@ -5,10 +5,11 @@ import tkinter as tk
 from tkinter import ttk
 import platform
 
+try:
+        response = requests.get(url)
+        response.raise_for_status()
+        data = response.json()
 os = platform.system()
-#fining the 
-
-
 
 def simple_clean()
     if os == "Windows"
